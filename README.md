@@ -1,16 +1,7 @@
-Kırklareli Toplu Taşıma Hattı Planlaması
-Bu proje, Kırklareli ilinin 3 farklı mahallesi için yeni bir toplu taşıma hattı tasarımı yapmayı amaçlamaktadır. Program, mahalleler için çeşitli kriterleri değerlendirerek en uygun güzergahı belirler ve maliyet-fayda analizini gerçekleştirir. Yazılım, Softmax algoritmasını kullanarak her kriterin ağırlığını hesaplar.
+Kırklareli Toplu Taşıma Hattı Planlaması projesi, Kırklareli ilinin 3 farklı mahallesi için yeni bir toplu taşıma hattı tasarımı yapmayı amaçlamaktadır. Bu yazılım, mahalleler için çeşitli kriterleri değerlendirerek en uygun güzergahı belirler ve maliyet-fayda analizini gerçekleştirir. Programda Softmax algoritması kullanılarak her kriterin ağırlığı hesaplanır.
 
-Amaç
-Mahalle Seçimi: Nüfus yoğunluğu, mevcut ulaşım altyapısı, maliyet analizi, çevresel etki ve sosyal fayda gibi kriterlere göre en uygun toplu taşıma güzergahını belirlemek.
-Softmax Kullanımı: Kriterlerin ağırlıklarını belirlemek ve her mahalle için bu kriterlere göre maliyet-fayda analizi yapmak.
-Sonuçların Değerlendirilmesi: Program, her mahalle için maliyet-fayda oranını hesaplar ve en uygun güzergahı kullanıcıya bildirir.
+Proje, mahalleler arasındaki farklı kriterlere dayalı olarak toplu taşıma hattının seçilmesinde karar verme sürecini kolaylaştırmayı hedefler. Kullanıcıdan, her mahalle için nüfus yoğunluğu, mevcut ulaşım altyapısı, maliyet, çevresel etki ve sosyal fayda gibi kriterler alınır. Bu kriterlere Softmax algoritması uygulanarak her mahalleye ait ağırlıklar hesaplanır. Ardından, her mahalle için maliyet-fayda analizi yapılır ve en uygun toplu taşıma güzergahı belirlenir.
 
-Kullanılan Kriterler
-Nüfus Yoğunluğu: Mahalledeki kişi başına düşen alan.
-Mevcut Ulaşım Altyapısı: Mahalledeki toplu taşıma, yollar, vs. gibi mevcut altyapı.
-Maliyet Analizi: Toplu taşıma hattının kurulması için gereken maliyet.
-Çevresel Etki: Toplu taşımanın çevreye olan etkisi.
-Sosyal Fayda: Toplu taşımanın mahalle halkına olan faydası.
-Softmax Algoritması
-Softmax algoritması, her bir kriterin ağırlığını hesaplamak için kullanılır. Girdi kriterlerinin pozitif ve normalleştirilmiş ağırlıklarını elde ederiz. Bu sayede her kriterin mahalleler üzerindeki etkisi daha doğru bir şekilde belirlenir.
+Softmax algoritması, her kriterin etkisini daha doğru bir şekilde belirlememizi sağlayarak, mahalleler arasındaki değerlendirmeleri normalize eder. Bu sayede her kriterin mahalleler üzerindeki etkisi daha adil bir şekilde hesaplanır.
+
+Programı çalıştırdıktan sonra, kullanıcıya her mahalle için çeşitli kriterler girilmesi istenir ve sonuç olarak her mahalle için maliyet-fayda oranları hesaplanır. Son olarak, en uygun güzergah ekranda gösterilir.
